@@ -3,6 +3,8 @@
 > E-commerce desarrollado con React JS, Vite y Firebase.
 >
 > Esto es una prueba tecnica
+>
+> Federico Omar
 
 ![React](https://img.shields.io/badge/React-19-blue)
 ![Vite](https://img.shields.io/badge/Vite-Bundler-purple)

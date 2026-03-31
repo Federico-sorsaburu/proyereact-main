@@ -11,25 +11,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ```bash
 # Development server (runs on http://localhost:5173)
 npm run dev
-
-# Production build
-npm run build
-
-# Lint with ESLint
-npm run lint
-
-# Preview production build locally
-npm run preview
-
-# Install dependencies
-npm install
-```
-
-## Architecture Overview
-
-### Technology Stack
-- **React 19** with hooks and functional components
-- **Vite** for build tooling
 - **React Router DOM v7** for SPA navigation
 - **Firebase Firestore** for database (products and orders)
 - **React Hook Form** for form validation

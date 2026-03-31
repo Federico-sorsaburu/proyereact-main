@@ -1,0 +1,168 @@
+/* --- navbar.css (Solo estilos del menú) --- */
+
+/* NOTA: Las variables y resets ahora están en index.css */
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--dark-bg); 
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    z-index: 1000;
+}
+
+header .btn-menu {
+    font-size: 1.8em;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    transition: color 0.3s;
+}
+header .btn-menu:hover {
+    color: var(--primary-color);
+}
+
+header .logo {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.8em;
+    color: var(--white);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 25px; 
+}
+
+.login-link {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    white-space: nowrap; 
+    transition: opacity 0.2s;
+}
+.login-link:hover {
+    opacity: 0.8;
+}
+
+.cart-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.cart-wrapper:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.cart-quantity-inline {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #ef4444; 
+    color: white !important;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 0.65em !important; 
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--dark-bg);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 350px;
+    height: 100vh;
+    background: rgba(17, 24, 39, 0.98); 
+    backdrop-filter: blur(10px);
+    box-shadow: 4px 0 15px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2000;
+    transform: translateX(-100%);
+}
+
+.menu.active {
+    transform: translateX(0%);
+}
+
+.menu .btn-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 2em;
+    color: var(--white);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.menu .btn-close:hover {
+    color: var(--primary-color);
+}
+
+.menu nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+.menu nav ul li {
+    margin-bottom: 30px;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--white);
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+.menu nav ul li a:hover,
+.menu nav ul li a.active {
+    color: var(--primary-color);
+    letter-spacing: 2px;
+}
+
+.btn-card {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--dark-bg); 
+    color: white;
+    padding: 12px 0;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-card:hover {
+    background-color: var(--primary-color); 
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
+}
